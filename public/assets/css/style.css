@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'fira_sansextralight';
+  src: url("../webfonts/firasans-extralight-webfont.eot");
+  src: url("../webfonts/firasans-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../webfonts/firasans-extralight-webfont.woff2") format("woff2"), url("../webfonts/firasans-extralight-webfont.woff") format("woff"), url("../webfonts/firasans-extralight-webfont.ttf") format("truetype"), url("../webfonts/firasans-extralight-webfont.svg#fira_sansextralight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'fira_sansregular';
+  src: url("../webfonts/firasans-regular-webfont.eot");
+  src: url("../webfonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../webfonts/firasans-regular-webfont.woff2") format("woff2"), url("../webfonts/firasans-regular-webfont.woff") format("woff"), url("../webfonts/firasans-regular-webfont.ttf") format("truetype"), url("../webfonts/firasans-regular-webfont.svg#fira_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'fira_sanssemibold';
+  src: url("../webfonts/firasans-semibold-webfont.eot");
+  src: url("../webfonts/firasans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../webfonts/firasans-semibold-webfont.woff2") format("woff2"), url("../webfonts/firasans-semibold-webfont.woff") format("woff"), url("../webfonts/firasans-semibold-webfont.ttf") format("truetype"), url("../webfonts/firasans-semibold-webfont.svg#fira_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'fira_sansbook';
+  src: url("../webfonts/firasans-book-webfont.woff2") format("woff2"), url("../webfonts/firasans-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: "fira_sansregular", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden; }
+
+.xs-hide {
+  display: none !important; }
+  @media (min-width: 992px) {
+    .xs-hide {
+      display: inline-block !important; } }
+
+@media (min-width: 992px) {
+  .md-hide {
+    display: none !important; } }
+
+a:hover {
+  text-decoration: none; }
+
+.home header {
+  background: #80c342;
+  padding-bottom: 20px;
+  position: relative; }
+  @media (min-width: 992px) {
+    .home header {
+      height: 572px; } }
+  .home header .container {
+    padding: 0;
+    position: relative; }
+    .home header .container::before {
+      content: '';
+      display: block;
+      width: 76px;
+      height: 31px;
+      background: url("../images/layout/green-triangle-1.png") left top no-repeat;
+      position: absolute;
+      left: 0;
+      bottom: -67px;
+      z-index: 4; }
+      @media (min-width: 992px) {
+        .home header .container::before {
+          bottom: -97px; } }
+    .home header .container::after {
+      content: '';
+      display: block;
+      width: 65px;
+      height: 29px;
+      background: url("../images/layout/white-triangle-1.png") left top no-repeat;
+      position: absolute;
+      right: 0;
+      bottom: -37px;
+      z-index: 4; }
+      @media (min-width: 992px) {
+        .home header .container::after {
+          bottom: -7px; } }
+  .home header::after {
+    content: '';
+    width: 100%;
+    height: 40px;
+    background: #80c342;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    background: url("../images/layout/diagonal-1.png") center top no-repeat;
+    background-size: 100% 40px; }
+    @media (min-width: 992px) {
+      .home header::after {
+        height: 118px;
+        bottom: -118px;
+        background-size: cover; } }
+  .home header .logo {
+    margin: 25px 0 25px 25px;
+    display: inline-block; }
+  .home header .right {
+    background: url("../images/layout/main-image.png") center center no-repeat;
+    height: 400px;
+    background-size: 140% auto;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .home header .right {
+        background-image: none; } }
+    @media (min-width: 992px) {
+      .home header .right {
+        float: right;
+        width: 50%; } }
+    .home header .right img {
+      display: none;
+      max-width: 100%; }
+      @media (min-width: 768px) {
+        .home header .right img {
+          display: inline-block;
+          max-height: 100%; } }
+      @media (min-width: 992px) {
+        .home header .right img {
+          max-height: none; } }
+  @media (min-width: 992px) {
+    .home header .left {
+      float: left;
+      width: 50%; } }
+  .home header h1 {
+    display: none; }
+    @media (min-width: 992px) {
+      .home header h1 {
+        display: block;
+        font-family: "fira_sansextralight";
+        font-size: 48px;
+        color: #fff;
+        font-style: italic;
+        text-align: left;
+        margin-top: 120px; } }
+  .home header h2 {
+    color: #fff;
+    font-family: "fira_sanssemibold";
+    font-size: 33px;
+    padding: 0 25px;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .home header h2 {
+        text-align: left;
+        font-size: 72px;
+        padding: 0; } }
+    .home header h2 br {
+      display: none; }
+      @media (min-width: 992px) {
+        .home header h2 br {
+          display: block; } }
+
+.pages header {
+  background: #80c342;
+  padding: 30px 0; }
+  .pages header .logo {
+    float: left; }
+  .pages header h1 {
+    float: right;
+    color: #fff;
+    font-size: 32px;
+    font-family: "fira_sanssemibold";
+    font-weight: normal;
+    font-style: italic;
+    margin: 0; }
+
+.pages main {
+  padding: 20px 0 0; }
+
+.register-page label {
+  font-family: "fira_sansextralight";
+  color: #7f7f7f;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal; }
+  @media (min-width: 992px) {
+    .register-page label {
+      font-size: 21px; } }
+.register-page .form-control {
+  border-radius: 0;
+  border: 1px solid #dadada;
+  box-shadow: none; }
+.register-page .btns .btn-green-filled {
+  background: #80c342;
+  color: #fff;
+  font-family: "fira_sanssemibold";
+  font-weight: normal;
+  font-style: italic;
+  border-radius: 0;
+  border: none;
+  padding: 0 10px;
+  font-size: 23px;
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 10px; }
+  @media (min-width: 992px) {
+    .register-page .btns .btn-green-filled {
+      margin-right: 10px; } }
+.register-page .btns a {
+  vertical-align: top; }
+.register-page .overlay {
+  opacity: 0.2;
+  pointer-events: none;
+  transition: opacity 0.2s ease-out;
+  padding-top: 20px; }
+  .register-page .overlay.active {
+    opacity: 1;
+    pointer-events: auto; }
+  .register-page .overlay .check {
+    display: none;
+    margin-left: 10px; }
+    .register-page .overlay .check i {
+      color: #80c342;
+      font-size: 20px; }
+.register-page input#file {
+  display: none; }
+.register-page .nf-add {
+  background: #80c342;
+  color: #fff;
+  font-family: "fira_sanssemibold";
+  font-weight: normal;
+  font-style: italic;
+  border-radius: 0;
+  border: none;
+  padding: 0 10px;
+  font-size: 23px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  cursor: pointer; }
+.register-page .checkbox label {
+  font-size: 18px; }
+.register-page .btn-green, .register-page .success {
+  color: #80c342;
+  font-family: "fira_sanssemibold";
+  font-size: 25px;
+  text-transform: uppercase;
+  border: 3px solid #80c342;
+  padding: 10px 35px;
+  display: inline-block;
+  margin: 45px 0;
+  background-color: transparent; }
+.register-page .success {
+  display: inline-block;
+  margin-bottom: 85px; }
+.register-page img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.static-page main {
+  padding: 50px 0; }
+  .static-page main h2 {
+    color: #80c342;
+    font-family: "fira_sansbook";
+    font-weight: normal;
+    font-size: 36px; }
+  .static-page main h3 {
+    color: #80c342;
+    margin-top: 35px; }
+  .static-page main a {
+    color: #80c342; }
+    .static-page main a:hover {
+      color: #80c342;
+      text-decoration: underline; }
+  .static-page main p {
+    color: #3c3c3c;
+    font-size: 16px; }
+
+footer nav {
+  background: #d1d3d4;
+  padding: 30px 0; }
+  footer nav .container {
+    position: relative; }
+    @media (min-width: 992px) {
+      footer nav .container::before {
+        position: absolute;
+        content: '';
+        top: -73px;
+        right: 0;
+        width: 88px;
+        height: 43px;
+        background: url("../images/layout/green-triangle-2.png"); } }
+  footer nav ul {
+    padding: 0 30px; }
+    @media (min-width: 992px) {
+      footer nav ul {
+        text-align: center; } }
+  footer nav li {
+    list-style: none;
+    font-family: "fira_sansbook";
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 33px;
+    font-style: italic;
+    padding: 20px 20px;
+    border-bottom: 1px solid #3c3c3c; }
+    @media (min-width: 992px) {
+      footer nav li {
+        display: inline-block;
+        border-bottom: 0;
+        border-right: 1px solid #3c3c3c;
+        padding: 0 50px; } }
+    footer nav li:last-child {
+      border-bottom: none; }
+      @media (min-width: 992px) {
+        footer nav li:last-child {
+          border-right: none; } }
+    footer nav li a {
+      color: #3c3c3c; }
+      footer nav li a:hover {
+        color: inherit; }
+footer #copyright {
+  text-align: center;
+  background: #80c342;
+  padding: 50px 0; }
+  footer #copyright .container {
+    padding: 0;
+    position: relative; }
+    footer #copyright .container::before {
+      position: absolute;
+      content: '';
+      top: -72px;
+      left: 3px;
+      width: 53px;
+      height: 34px;
+      background: url("../images/layout/green-triangle-3.png"); }
+  footer #copyright .logo {
+    margin-bottom: 10px; }
+    @media (min-width: 992px) {
+      footer #copyright .logo {
+        float: left; } }
+  footer #copyright h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 33px;
+    font-family: "fira_sanssemibold"; }
+    @media (min-width: 992px) {
+      footer #copyright h2 {
+        float: right; } }
+
+/*# sourceMappingURL=style.css.map */

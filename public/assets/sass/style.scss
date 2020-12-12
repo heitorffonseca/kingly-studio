@@ -1,0 +1,36 @@
+@import 'functions/variables';
+@import 'functions/mixins'; 
+@import 'functions/webfonts';
+
+body {
+	font-family: $font1, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	background: #fff;
+	overflow-x: hidden;
+}
+
+.xs-hide {
+	display: none !important;
+
+	@include desktop {
+		display: inline-block !important;
+	}
+}
+
+.md-hide {
+	@include desktop {
+		display: none !important;
+	}
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@import 'parts/header';
+@import 'parts/home';
+@import 'parts/main';
+@import 'parts/footer';

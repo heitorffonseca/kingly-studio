@@ -1,0 +1,166 @@
+.home {
+	header {
+		background: $green;
+		padding-bottom: 20px;
+		position: relative;
+
+		@include desktop {
+			height: 572px;
+		}
+
+		.container {
+			padding: 0;
+			position: relative;
+
+			&::before {
+				content: '';
+				display: block;
+				width: 76px;
+				height: 31px;
+				background: url('../images/layout/green-triangle-1.png') left top no-repeat;
+				position: absolute;
+				left: 0;
+				bottom: -67px;
+				z-index: 4;
+
+				@include desktop {
+					bottom: -97px;
+				}
+			}
+
+			&::after {
+				content: '';
+				display: block;
+				width: 65px;
+				height: 29px;
+				background: url('../images/layout/white-triangle-1.png') left top no-repeat;
+				position: absolute;
+				right: 0;
+				bottom: -37px;
+				z-index: 4;
+
+				@include desktop {
+					bottom: -7px;
+				}
+			}
+		}
+
+		&::after {
+			content: '';
+			width: 100%;
+			height: 40px;
+			background: $green;
+			position: absolute;
+			bottom: -40px;
+			left: 0;
+			background: url('../images/layout/diagonal-1.png') center top no-repeat;
+			background-size: 100% 40px;
+
+			@include desktop {
+				height: 118px;
+				bottom: -118px;
+				background-size: cover;
+			}
+
+		}
+
+		.logo {
+			margin: 25px 0 25px 25px;
+			display: inline-block;
+		}
+
+		.right {
+			background: url('../images/layout/main-image.png') center center no-repeat;
+			height: 400px;
+			background-size: 140% auto;
+			text-align: center;
+
+			@include tablet {
+				background-image: none;
+			}
+
+			@include desktop {
+				float: right;
+				width: 50%;
+			}
+
+			img {
+				display: none;
+				max-width: 100%;
+
+				@include tablet {
+					display: inline-block;	
+					max-height: 100%;
+				}
+
+				@include desktop {
+					max-height: none;
+				}
+			}
+		}
+
+		.left {
+			@include desktop {
+				float: left;
+				width: 50%;
+			}
+		}
+
+		h1 {
+			display: none;
+
+			@include desktop {
+				display: block;
+				font-family: $font1_light;
+				font-size: 48px;
+				color: #fff;
+				font-style: italic;
+				text-align: left;
+				margin-top: 120px;
+			}
+		}
+
+		h2 {
+			color: #fff;
+			font-family: $font1_black;
+			font-size: 33px;
+			padding: 0 25px;
+			text-align: center;
+
+			@include desktop {
+				text-align: left;
+				font-size: 72px;
+				padding: 0;
+			}
+
+			br {
+				display: none;
+
+				@include desktop {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.pages {
+	header {
+		background: $green;
+		padding: 30px 0;
+
+		.logo {
+			float: left;
+		}
+
+		h1 {
+			float: right;
+			color: #fff;
+			font-size: 32px;
+			font-family: $font1_bold;
+			font-weight:normal;
+			font-style: italic;
+			margin: 0;
+		}
+	}
+}
